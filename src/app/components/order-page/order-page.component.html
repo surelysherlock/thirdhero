@@ -1,0 +1,17 @@
+<h3>Order a Burger!</h3>
+
+<form id="left1em" [formGroup]="newBurgerForm" (ngSubmit)="submitBurgerOrder(newBurgerForm.value)" >
+  <label id="strong">
+    Bun
+    <input formControlName="valueForBun" type="text" name="state" id="state" >
+  </label>
+  <label id="strong">
+    Meat
+    <input formControlName="valueForMeat" type="text" name="state" id="state" >
+  </label>
+  <label id="strong">
+    Topping
+    <input formControlName="valueForTopping" type="text" name="state" id="state" >
+  </label>
+  <button type="submit" >Submit</button>
+</form>
